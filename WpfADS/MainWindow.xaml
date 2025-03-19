@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfADS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfADS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closed="WindowsClose">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="6" Content="Test" Grid.Row="0"  />
+        <Label x:Name="LabelHorodatage" Grid.Column="5" Content="Label01" Grid.Row="0" />
+        
+        <Label x:Name="LabelnCounter" Grid.Column="0" Content="nCounter" Grid.Row="3" />
+        <Label x:Name="LabelnCounterValue" Grid.Column="1" Content="nCounterValue" Grid.Row="3" />
+        <TextBox x:Name="tbxnCounterPreparedValue" Grid.Column="2" Grid.Row="3" TextWrapping="Wrap" Text="0"  />
+        <Button Grid.Column="3" Content="Write" Grid.Row="3" Click="btnnCounterValue"  />
+
+        <Label x:Name="LabelsString1" Grid.Column="0" Content="sString1" Grid.Row="4" />
+        <Label x:Name="LabelsString1Value" Grid.Column="1" Content="sString1Value" Grid.Row="4" />
+        <TextBox x:Name="tbxsString1PreparedValue" Grid.Column="2" Grid.Row="4" TextWrapping="Wrap"   />
+        <Button Grid.Column="3" Content="Write" Grid.Row="4" Click="btnsSting1Value"  />
+
+        <CheckBox x:Name="cbbCheckbox" Grid.Column="2" Grid.Row="2" Content="bCheckBox" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CheckBox_Click"/>
+
+        <Label x:Name="LabelFloat1" Grid.Column="0" Content="Float1" Grid.Row="5" />
+        <Label x:Name="LabelsFloat11Value" Grid.Column="1" Content="sString1Value" Grid.Row="5" />
+        <TextBox x:Name="tbxsFloat1PreparedValue" Grid.Column="2" Grid.Row="5" TextWrapping="Wrap"   />
+        <Button Grid.Column="3" Content="Write" Grid.Row="5" Click="btnFloatValue_Click"  />
+    </Grid>
+</Window>
